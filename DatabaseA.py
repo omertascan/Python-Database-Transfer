@@ -2,14 +2,14 @@ import mysql.connector
 
 mydb = mysql.connector.connect(
     host='localhost',
-    user='root',
-    password='gh5@@hfE',
-    database='pythontask'
+    user='username ',
+    password='password',
+    database='database name'
 )
 mycursor = mydb.cursor()
 
 sql = "INSERT INTO  users(name, email) VALUES (%s, %s)"
-val =("Omer Tascan", "omertascan10@gmail.com" ) 
+val =("Omer ", "omer@gmail.com" ) 
 
 
 mycursor.execute( sql, val )
