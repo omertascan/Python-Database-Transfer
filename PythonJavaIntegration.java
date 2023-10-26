@@ -6,7 +6,7 @@ public class PythonJavaIntegration{
     
 public static void main(String[] args) throws IOException, InterruptedException {
 
-    String path ="C:\\Users\\omert\\Task2\\DataTransfer.py" ;
+    String path ="DataTransfer.py path" ;
 
     ProcessBuilder pb = new ProcessBuilder("python",path).inheritIO();
     Process process = pb.start();
